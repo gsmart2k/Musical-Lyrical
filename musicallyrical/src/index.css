@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 3em;
+  background: deeppink;
+  animation: change 5s ease-in-out;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.searchbar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 20%;
+  z-index: 1;
+}
+.searchbar input {
+  width: 80%;
+  background: none;
+  border: none;
+  margin-left: 2em;
+  padding: 1em;
+  outline: none;
+  z-index: 1;
+  color: #fff;
+}
+.searchbar input::placeholder {
+  color: #fff;
+  font-weight: bolder;
+}
+.wrapper {
+  width: 100%;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background: crimson;
+  border-radius: 2em;
+  box-shadow: 0px 5px 20px black;
+}
+.search-button {
+  padding: 1em;
+  border-top-right-radius: 2em;
+  border-bottom-right-radius: 2em;
+  background: white;
+  border: none;
+  margin-right: 0em;
+  outline: none;
+}
+.circle {
+  border-radius: 50%;
+  opacity: 20%;
+  z-index: 1;
+  box-shadow: 0 10px 15px black;
+  animation: animate 2s ease-in;
+}
+.one {
+  background: cornflowerblue;
+  position: absolute;
+  right: 0em;
+  top: 7em;
+  width: 5em;
+  height: 10em;
+  border-radius: 150px 0 0 150px;
+}
+.two {
+  background: seagreen;
+  position: absolute;
+  left: 0em;
+  bottom: 1em;
+  width: 10em;
+  height: 10em;
+}
+.three {
+  background: cyan;
+  position: absolute;
+  left: 0em;
+  bottom: 24em;
+  width: 5em;
+  height: 10em;
+  border-radius: 0px 150px 150px 0px;
+}
+.four {
+  background: whitesmoke;
+  position: absolute;
+  right: 0em;
+  bottom: 11em;
+  width: 10em;
+  height: 10em;
+}
+.header {
+  padding: 2em;
+  text-align: center;
+}
+.header-text {
+  color: #fff;
+  font-family: Futura Md Bt;
+  font-size: 3em;
+  margin: 0px;
+  padding: 0px;
+}
+.span {
+  font-family: Ar Berkley;
+  font-size: 3em;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  bottom: 0.7em;
+}
+@keyframes animate {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 20%;
+  }
+}
+@keyframes change {
+  from {
+    background: purple;
+  }
+  to {
+    background: deeppink;
+  }
+}
